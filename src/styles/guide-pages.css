@@ -1,0 +1,268 @@
+/* ============================================
+   Stat Master - Guide Pages
+   ============================================ */
+
+.guide-page {
+    padding-top: 0;
+    min-height: 100vh;
+}
+
+.guide-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    min-height: calc(100vh - var(--nav-height));
+    gap: 0;
+}
+
+/* Sidebar */
+.guide-sidebar {
+    position: sticky;
+    top: var(--nav-height);
+    height: calc(100vh - var(--nav-height));
+    overflow-y: auto;
+    padding: 24px 16px;
+    border-right: 1px solid var(--border-light);
+    background: var(--bg-light-gray);
+}
+
+.guide-sidebar-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 12px;
+    margin-bottom: 12px;
+}
+
+.guide-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.guide-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: var(--radius-sm);
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+}
+
+.guide-nav-link:hover {
+    background: rgba(var(--primary-rgb), 0.06);
+    color: var(--primary);
+}
+
+.guide-nav-link.active {
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+}
+
+.guide-nav-link i {
+    width: 18px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Content */
+.guide-content {
+    padding: 40px 48px;
+    max-width: 900px;
+}
+
+.guide-section {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.guide-content-header {
+    margin-bottom: 32px;
+}
+
+.guide-content-header h1 {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.guide-content-header p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.guide-content h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border-light);
+}
+
+.guide-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.guide-content p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.guide-content ul,
+.guide-content ol {
+    margin: 12px 0 20px 20px;
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.guide-content li {
+    margin-bottom: 8px;
+}
+
+.guide-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Section Navigation */
+.guide-section-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-light);
+}
+
+.guide-nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-light);
+    background: var(--bg-white);
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    max-width: 48%;
+}
+
+.guide-nav-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: rgba(var(--primary-rgb), 0.04);
+}
+
+.guide-nav-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.guide-nav-btn.next {
+    margin-left: auto;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border: 1px solid var(--border-light);
+}
+
+.comparison-table th {
+    background: var(--bg-light-gray);
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.comparison-table td {
+    color: var(--text-secondary);
+}
+
+/* References */
+.guide-references {
+    margin-top: 48px;
+    padding: 24px;
+    background: var(--bg-light-gray);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+}
+
+.guide-references h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.guide-references ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.guide-references li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 6px;
+    padding-left: 16px;
+    position: relative;
+}
+
+.guide-references li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    color: var(--text-light);
+}
+
+.guide-references a {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.guide-references a:hover {
+    text-decoration: underline;
+}

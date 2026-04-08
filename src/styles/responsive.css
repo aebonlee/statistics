@@ -1,0 +1,86 @@
+/* ============================================
+   Stat Master - Responsive Design
+   ============================================ */
+
+@media (max-width: 1280px) {
+    .container { padding: 0 32px; }
+    .navbar-inner { padding: 0 32px; }
+    .nav-link { padding: 10px 12px; font-size: 13px; }
+    .features-grid { grid-template-columns: repeat(2, 1fr); }
+    .paths-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 1024px) {
+    .nav-links { display: none; }
+    .mobile-menu-toggle { display: flex; }
+    .nav-auth-group { display: none; }
+    .guide-layout { grid-template-columns: 260px 1fr; }
+    .guide-content { padding: 32px; }
+    .workflow-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --nav-height: 64px;
+        --section-padding: 60px;
+    }
+    .container { padding: 0 20px; }
+    .navbar-inner { padding: 0 20px; }
+
+    .hero { padding: calc(var(--nav-height) + 48px) 0 60px; min-height: auto; }
+    .hero-title { font-size: 36px; }
+    .hero-description { font-size: 16px; }
+    .hero-content { padding: 0 20px; }
+    .hero-actions { flex-direction: column; align-items: center; }
+    .hero-actions .btn { width: 100%; max-width: 320px; }
+
+    .features-grid { grid-template-columns: 1fr; }
+    .paths-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: 1fr; gap: 24px; }
+    .stat-number { font-size: 36px; }
+    .workflow-grid { grid-template-columns: 1fr; gap: 24px; }
+
+    .guide-layout { grid-template-columns: 1fr; }
+    .guide-sidebar {
+        position: static;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border-light);
+        padding: 16px;
+    }
+    .guide-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    .guide-nav-link {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+    .guide-content { padding: 24px 20px; }
+    .guide-content-header h1 { font-size: 24px; }
+
+    .section-title { font-size: 28px; }
+    .footer-content { grid-template-columns: 1fr; gap: 32px; }
+    .cta-title { font-size: 28px; }
+}
+
+@media (max-width: 480px) {
+    .container { padding: 0 16px; }
+    .navbar-inner { padding: 0 16px; }
+    .hero-title { font-size: 28px; }
+    .hero-badge { font-size: 12px; padding: 6px 14px; }
+    .section-title { font-size: 24px; }
+    .cta-title { font-size: 24px; }
+
+    .toast-container {
+        top: auto;
+        bottom: 20px;
+        right: 12px;
+        left: 12px;
+    }
+    .toast-item {
+        min-width: auto;
+        max-width: none;
+    }
+}

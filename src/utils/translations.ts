@@ -1,0 +1,106 @@
+const translations: Record<string, Record<string, unknown>> = {
+  ko: {
+    nav: {
+      about: '소개',
+      community: '커뮤니티',
+    },
+    hero: {
+      badge: '통계학 학습 가이드 2026',
+      title: '통계학의\n',
+      titleHighlight: '모든 것을 마스터하세요',
+      description: '기술통계부터 베이지안통계까지 — 통계학의 A to Z를 체계적으로 배워보세요.',
+      cta: '학습 시작하기',
+      ctaSecondary: '더 알아보기',
+    },
+    features: {
+      title: '왜 DreamIT Statistics인가?',
+      subtitle: '이론과 실무를 아우르는 체계적인 통계학 학습 자료를 제공합니다.',
+      descriptive: { title: '데이터 요약', desc: '데이터의 특성을 파악하고 시각화하는 기술통계의 핵심을 배웁니다.' },
+      probability: { title: '확률 이론', desc: '불확실성을 수량화하는 확률론의 기본 개념과 분포를 학습합니다.' },
+      inference: { title: '통계적 추론', desc: '표본에서 모집단을 추론하는 추론통계의 원리를 이해합니다.' },
+      analysis: { title: '고급 분석', desc: '회귀분석, 분산분석, 베이지안통계 등 실무 분석 기법을 익힙니다.' },
+    },
+    home: {
+      pathsTitle: '학습 경로',
+      pathsSubtitle: '목표에 맞는 학습 경로를 선택하고 체계적으로 학습하세요.',
+      workflowTitle: '학습 플로우',
+      workflowSubtitle: '4단계로 통계학을 마스터하세요.',
+      step1: '기초 개념 이해',
+      step1desc: '기술통계와 확률론의 기본 개념을 파악하여 기초를 다집니다.',
+      step2: '추론 방법 학습',
+      step2desc: '표본에서 모집단을 추론하는 방법과 가설검정을 배웁니다.',
+      step3: '분석 기법 적용',
+      step3desc: '회귀분석, 분산분석 등 실무에서 활용하는 분석 기법을 익힙니다.',
+      step4: '고급 통계 활용',
+      step4desc: '비모수통계와 베이지안통계를 학습하여 분석 역량을 완성합니다.',
+    },
+    stats: {
+      guides: '학습 가이드',
+      topics: '학습 주제',
+      categories: '학습 카테고리',
+    },
+    cta: {
+      title: '지금 바로 통계학 학습을 시작하세요',
+      description: '체계적인 통계학 학습으로 데이터 분석 역량을 키워보세요.',
+      button: '학습 시작하기',
+    },
+    footer: {
+      description: '통계학의 모든 것을 배우는 종합 학습 플랫폼입니다.',
+      descriptionDetail: '기술통계, 확률론, 추론통계, 가설검정, 회귀분석 등 체계적인 통계학 학습 자료를 제공합니다.',
+      quickLinks: '빠른 링크',
+    },
+  },
+  en: {
+    nav: {
+      about: 'About',
+      community: 'Community',
+    },
+    hero: {
+      badge: 'Statistics Learning Guide 2026',
+      title: 'Master Everything About\n',
+      titleHighlight: 'Statistics',
+      description: 'From descriptive statistics to Bayesian statistics — learn the A to Z systematically.',
+      cta: 'Start Learning',
+      ctaSecondary: 'Learn More',
+    },
+    features: {
+      title: 'Why DreamIT Statistics?',
+      subtitle: 'We provide systematic statistics learning materials covering theory and practice.',
+      descriptive: { title: 'Data Summary', desc: 'Learn the essentials of descriptive statistics to understand and visualize data.' },
+      probability: { title: 'Probability', desc: 'Study the fundamental concepts and distributions of probability theory.' },
+      inference: { title: 'Statistical Inference', desc: 'Understand the principles of inferring population characteristics from samples.' },
+      analysis: { title: 'Advanced Analysis', desc: 'Master practical analysis techniques including regression, ANOVA, and Bayesian statistics.' },
+    },
+    home: {
+      pathsTitle: 'Learning Paths',
+      pathsSubtitle: 'Choose a learning path that matches your goals and learn systematically.',
+      workflowTitle: 'Learning Flow',
+      workflowSubtitle: 'Master statistics in 4 systematic steps.',
+      step1: 'Understand Fundamentals',
+      step1desc: 'Build a foundation by grasping the basic concepts of descriptive statistics and probability.',
+      step2: 'Learn Inference Methods',
+      step2desc: 'Study methods for inferring population parameters and hypothesis testing.',
+      step3: 'Apply Analysis Techniques',
+      step3desc: 'Master practical analysis techniques like regression and ANOVA.',
+      step4: 'Advanced Statistics',
+      step4desc: 'Complete your analytical skills with nonparametric and Bayesian statistics.',
+    },
+    stats: {
+      guides: 'Study Guides',
+      topics: 'Topics Covered',
+      categories: 'Categories',
+    },
+    cta: {
+      title: 'Start Learning Statistics Today',
+      description: 'Build your data analysis skills through systematic statistics learning.',
+      button: 'Start Learning',
+    },
+    footer: {
+      description: 'A comprehensive platform for learning statistics.',
+      descriptionDetail: 'Providing systematic learning materials for descriptive statistics, probability, inference, and more.',
+      quickLinks: 'Quick Links',
+    },
+  },
+};
+
+export default translations;

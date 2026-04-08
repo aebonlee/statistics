@@ -1,0 +1,114 @@
+/* ============================================
+   Stat Master - Footer
+   ============================================ */
+
+.footer {
+    background: #111827;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 60px 0 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.brand-study { color: var(--primary-light); }
+.brand-master { color: #fff; }
+
+.footer-description {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-link-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-link-list a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-link-list a:hover {
+    color: #fff;
+}
+
+.footer-email {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.footer-email-icon {
+    color: var(--primary-light);
+}
+
+.footer-email a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.footer-email a:hover {
+    color: #fff;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.business-hours {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 8px;
+}
+
+.footer-family {
+    margin-top: 16px;
+}
+
+.footer-family select {
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom-info {
+    margin-top: 4px;
+}
